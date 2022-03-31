@@ -9,6 +9,7 @@ public class Textures {
 
     private final Texture spritesheet;
     private final Texture foodSpritesheet;
+    private final Texture obstacleSpritesheet;
     private final Texture tailSpritesheet;
     private final Texture background;
     private final TextureRegion snakeImg;
@@ -16,10 +17,12 @@ public class Textures {
     private final TextureRegion greenBody, yellowBody, orangeBody, redBody, purpleBody, blueBody;
     private final TextureRegion tailUp, tailDown, tailLeft, tailRight;
     private final TextureRegion foodImg;
+    private final TextureRegion obstacleImg;
 
     Textures(){
         spritesheet = new Texture("spritesheet.png");
         foodSpritesheet = new Texture("food.png");
+        obstacleSpritesheet = new Texture("stone 35x35.png");
         tailSpritesheet = new Texture("tailspritesheet.png");
         background = new Texture("1.png");
 
@@ -42,11 +45,13 @@ public class Textures {
 
         snakeImg = new TextureRegion(spritesheet, 144, 11, Snake.SEGMENT_WIDTH, Snake.SEGMENT_HEIGHT);
         foodImg = new TextureRegion(foodSpritesheet, 0, 0, Snake.SEGMENT_WIDTH, Snake.SEGMENT_HEIGHT);
+        obstacleImg = new TextureRegion(obstacleSpritesheet, 0, 0, Snake.SEGMENT_WIDTH, Snake.SEGMENT_HEIGHT);
     }
 
     public void disposeTextures(){
         spritesheet.dispose();
         foodSpritesheet.dispose();
+        tailSpritesheet.dispose();
         background.dispose();
     }
 
@@ -122,5 +127,7 @@ public class Textures {
         return foodImg;
     }
 
-
+    public TextureRegion getObstacleImg() {
+        return obstacleImg;
+    }
 }

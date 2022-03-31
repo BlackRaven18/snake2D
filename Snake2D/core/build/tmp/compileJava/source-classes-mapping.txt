@@ -1,5 +1,8 @@
-com/snake2d/game/Snake2D.java
- com.snake2d.game.Snake2D
+com/snake2d/game/PositionRandomizer.java
+ com.snake2d.game.NoMorePositionsAvailable
+ com.snake2d.game.PositionRandomizer
+com/snake2d/game/SnakeTextureType.java
+ com.snake2d.game.SnakeTextureType
 com/snake2d/game/Snake.java
  com.snake2d.game.MovementDirection
  com.snake2d.game.Snake
@@ -8,7 +11,10 @@ com/snake2d/game/Textures.java
  com.snake2d.game.Textures
 com/snake2d/game/Food.java
  com.snake2d.game.Food
- com.snake2d.game.NoMorePlaceForFood
-com/snake2d/game/FoodPositionRandomizer.java
- com.snake2d.game.FoodPositionRandomizer
- com.snake2d.game.NoMorePositionsAvailable
+ com.snake2d.game.NoMorePlaceForFoodException
+com/snake2d/game/Obstacle.java
+ com.snake2d.game.NoMorePlaceForObstacleException
+ com.snake2d.game.Obstacle
+com/snake2d/game/Snake2D.java
+ com.snake2d.game.Gamemode
+ com.snake2d.game.Snake2D
