@@ -1,2 +1,0 @@
-com/snake2d/game/desktop/DesktopLauncher.java
- com.snake2d.game.desktop.DesktopLauncher
