@@ -1,0 +1,159 @@
+buttons.png
+size: 450, 530
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arrow_over
+  rotate: false
+  xy: 150, 50
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+arrow_up
+  rotate: false
+  xy: 240, 50
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+button_over
+  rotate: false
+  xy: 0, 440
+  size: 200, 90
+  orig: 200, 90
+  offset: 0, 0
+  index: -1
+button_up
+  rotate: false
+  xy: 200, 440
+  size: 200, 90
+  orig: 200, 90
+  offset: 0, 0
+  index: -1
+frame_background
+  rotate: false
+  xy: 0, 140
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: 1
+frame_background_1_over
+  rotate: false
+  xy: 150, 140
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+frame_background
+  rotate: false
+  xy: 300, 140
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: 2
+frame_background_2_over
+  rotate: false
+  xy: 0, 290
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+frame_background
+  rotate: false
+  xy: 150, 290
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: 3
+frame_background_3_over
+  rotate: false
+  xy: 300, 290
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+frame_black_over
+  rotate: false
+  xy: 0, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_black_up
+  rotate: false
+  xy: 50, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_blue_over
+  rotate: false
+  xy: 100, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_blue_up
+  rotate: false
+  xy: 150, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_colorful_over
+  rotate: false
+  xy: 200, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_colorful_up
+  rotate: false
+  xy: 250, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_green_over
+  rotate: false
+  xy: 300, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_green_up
+  rotate: false
+  xy: 350, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_purple_over
+  rotate: false
+  xy: 400, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_purple_up
+  rotate: false
+  xy: 0, 50
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_red_over
+  rotate: false
+  xy: 50, 50
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+frame_red_up
+  rotate: false
+  xy: 100, 50
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1

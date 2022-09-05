@@ -1,0 +1,57 @@
+sourceCompatibility = 1.7
+sourceSets.main.java.srcDirs = [ "src/" ]
+sourceSets.main.resources.srcDirs = ["../core/assets"]
+
+project.ext.mainClassName = "com.snake2d.game.desktop.DesktopLauncher"
+project.ext.assetsDir = new File("../core/assets")
+
+task run(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+}
+
+task debug(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+    debug = true
+}
+
+task dist(type: Jar) {
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
+
+
+dist.dependsOn classes
+
+eclipse.project.name = appName + "-desktop"
+
+dependencies{
+    implementation 'junit:junit:4.13.2'
+    implementation('org.junit.jupiter:junit-jupiter-api:5.8.2')
+    implementation 'org.mockito:mockito-junit-jupiter:4.5.1'
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.8.2')
+    testRuntime("org.junit.jupiter:junit-jupiter-params:5.8.2")
+}
+
+
+test{
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation 'org.mockito:mockito-junit-jupiter:4.5.1'
+}
+
